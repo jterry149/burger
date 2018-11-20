@@ -1,5 +1,5 @@
-// Get dependencies
+// Import dependencies required dependencies variable
 var express = require("express");
 
-// Set up the router
+// Variable used to set up the router
 var router = express.Router();
