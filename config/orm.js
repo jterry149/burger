@@ -1,11 +1,23 @@
 // Import MySQL connection.
 var connection = require("../config/connection.js");
 
-// Functions needed for the orm.js file to query the mysql burgers_db.
+/// Start of the functions needed to query the database ///
 
-//     selectAll()
-//     insertOne()
-//     updateOne()
+// The function selectAll
+function selectAll()
+{
+
+}
+// The function insertOne
+function insertOne()
+{
+
+}
+// The function updateOne
+function updateOne()
+{
+
+}
 
 // Export the orm object for the model for the (burger.js).
 module.exports = orm;
