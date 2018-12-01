@@ -1,0 +1,38 @@
+body 
+{
+    background-image: url("../images/burger.jpeg");
+    background-position: center;
+    background-repeat: repeat;
+}
+h1{
+    font-size: 60px;
+    color: orangered;
+    text-shadow:4px 4px black;
+}
+h2, h3 {
+    color: orangered;
+}
+ul 
+{
+    list-style-type: none;
+}
+
+#burgers {
+    border: 2px solid red;
+    padding: 10px;
+    background-color: white;
+}
+
+#devoured {
+    border: 2px solid red;
+    padding: 10px;
+    background-color: white;
+}
+
+
+
+#addBurger {
+    border: 2px solid red;
+    padding: 10px;
+    background-color: white;
+}

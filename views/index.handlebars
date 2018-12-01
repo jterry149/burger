@@ -1,0 +1,47 @@
+<div class="container">
+     <!-- Title of Burger -->
+    <div class="title text-center">
+        <h1 id="burgerTitle">Burger Mania</h1>
+    </div>
+    <div class="row">
+        <!-- Burgers to be eaten -->
+        <div class="col-10 mx-auto text-center">  
+            <div id="burgers" class="mb-2">
+                <h2>Lets Devour a Burger!</h2>
+
+                <ul>
+                    {{#each burgers}} {{#if devoured}} {{> burgers/burger-block devoured=false}} {{/if}} {{/each}}
+                </ul>
+            </div>
+        </div>
+
+            <!-- Burgers that have been Devoured -->
+        <div class="col-6 mx-auto text-center">  
+            <div id="devoured" class="mb-2">
+                <h2>Burgers that were eaten!</h2>
+                <div class="menu text-center">
+                    <ul>
+                        {{#each burgers}} {{#unless devoured}}
+                        <ol>
+                            {{id}}. {{burger_name}}
+                        </ol>
+                        {{/unless}} {{/each}}
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+            <!-- ADD A burger to eat -->
+        <div class="col-6 mx-auto text-center">  
+            <div id="addBurger">
+                <span><h2>Add a Burger</h2></span>
+                <form class="create-form">
+                    <div class="form-group">
+                         <input type="text" id="add" name="name">
+                    </div>
+                    <button type="submit" class="btn btn-lg btn-warning">Add Burger!</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
