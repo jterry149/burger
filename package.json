@@ -4,7 +4,7 @@
   "description": "A restaurant app that lets users input the name of burgers they like",
   "main": "server.js",
   "scripts": {
-      "start": "node server.js"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -25,7 +25,8 @@
     "express-handlebars": "^3.0.0",
     "mysql": "^2.16.0"
   },
-  "engines": {
-    "node": "10.6.0"
+  "engines": 
+  {
+    "node": "^10.6.0"
   }
 }
