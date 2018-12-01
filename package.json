@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "A restaurant app that lets users input the name of burgers they like",
   "main": "server.js",
-  "scripts": {
-    "start": "node server.js"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jterry149/burger.git"
@@ -20,13 +17,19 @@
     "url": "https://github.com/jterry149/burger/issues"
   },
   "homepage": "https://github.com/jterry149/burger#readme",
-  "dependencies": {
-    "express": "4.16.4",
-    "express-handlebars": "3.0.0",
-    "mysql": "2.16.0"
+  "dependencies": 
+  {
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "mysql": "^2.16.0",
+    "path": "^0.12.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "engines": 
   {
-    "node": "10.6.0"
+    "node": "^10.6.0"
   }
 }
