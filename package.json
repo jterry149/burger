@@ -11,8 +11,8 @@
     "url": "git+https://github.com/jterry149/burger.git"
   },
   "keywords": [
-    "best",
-    "burger"
+    "burgers",
+    "devoured"
   ],
   "author": "Jessica Terry",
   "license": "ISC",
@@ -24,5 +24,8 @@
     "express": "^4.16.4",
     "express-handlebars": "^3.0.0",
     "mysql": "^2.16.0"
+  },
+  "engines": {
+    "node": "10.6.0"
   }
 }
