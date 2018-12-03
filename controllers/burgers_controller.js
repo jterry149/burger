@@ -5,7 +5,7 @@ var express = require("express");
 var router = express.Router();
 
 // Variable used to to bring in burger.js
-var burger = require("../models/burger");
+var burger = require("./models/burger");
 
 
 ////// Start the functions route for the burgers ///////
