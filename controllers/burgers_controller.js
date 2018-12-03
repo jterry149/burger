@@ -5,7 +5,7 @@ var express = require("express");
 var router = express.Router();
 
 // Variable used to to bring in burger.js
-var burger = require("./models/burger");
+var burger = require("../models/burger.js");
 
 
 ////// Start the functions route for the burgers ///////
@@ -17,7 +17,7 @@ router.get("/", (req, res) =>
     {
         var burgersObject = 
         {
-            burgers: data
+            burger: data
         };
         console.log(burgersObject);
         res.render("index", burgersObject);
