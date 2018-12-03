@@ -5,13 +5,13 @@ var express = require("express");
 var router = express.Router();
 
 // Variable used to to bring in burger.js
-var burger = require("../models/burger.js");
+var burger = require("../models/burger");
 
 
 ////// Start the functions route for the burgers ///////
 
 // GET route for getting all of the burgers
-router.get("/", (req, res) => 
+router.GET("/", (req, res) => 
 {
     burger.all(data => 
     {
@@ -25,7 +25,7 @@ router.get("/", (req, res) =>
 });
 
 // POST the route for the burgers
-router.post("/api/burgers", (req, res) => 
+router.POST("/api/burgers", (req, res) => 
 {
     // Insert the burger into the database
     burger.insert([
@@ -38,7 +38,7 @@ router.post("/api/burgers", (req, res) =>
 });
 
 // PUT the burgers as devoured in api by id if eaten
-router.put("/api/burgers/:id", (req, res) => 
+router.PUT("/api/burgers/:id", (req, res) => 
 {
     var condition = "id = " + req.params.id;
     
