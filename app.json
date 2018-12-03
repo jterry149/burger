@@ -2,9 +2,5 @@
     "name": "burger",
     "description": "An Node.js and Express based friend matching application.",
     "repository":"https://github.com/jterry149/burger.git",
-    "keywords": ["burger","devour","eating"],
-    "production": {
-        "use_env_variable": "JAWSDB_URL",
-        "dialect": "mysql"
-    }
+    "keywords": ["burger","devour","eating"]
 }
