@@ -1,8 +1,10 @@
 // Variable to use for mysql dependencies
 var mysql = require("mysql");
 
+// Variable to reference the database connection
 var connection = null;
-// Variable to create the connection to mysql and what database
+
+// Create the connection to mysql and what database
 if (process.env.JAWSDB_URL) 
 {
   connection = mysql.createConnection(process.env.JAWSDB_URL);
