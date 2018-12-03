@@ -1,8 +1,14 @@
 // Variable to use for mysql dependencies
 var mysql = require("mysql");
 
+var connection = null;
 // Variable to create the connection to mysql and what database
-var connection = mysql.createConnection(
+if (process.env.JAWSDB_URL) 
+{
+  connection = mysql.createConnection(process.env.JAWSDB_URL);
+}
+else
+connection = mysql.createConnection(
     {
   host: "localhost",
   port: 3306,

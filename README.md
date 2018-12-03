@@ -20,6 +20,6 @@ npm install express handlebars
 
 ## Heroku-Demo
 
-[App](https://burgmania.herokuapp.com/)
+[App](https://burgermania2.herokuapp.com/)
 
 
