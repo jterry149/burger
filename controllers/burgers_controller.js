@@ -11,16 +11,13 @@ var burger = require("../models/burger");
 ////// Start the functions route for the burgers ///////
 
 // GET route for getting all of the burgers
-router.get("/", function(req, res) 
-{
-    burger.all(function(data) 
-    {
-        var burgersObject = 
-        {
-            burger: data
+router.get("/", (req, res) => {
+    burger.all(data => {
+        const hbsObject = {
+            burgers: data
         };
-        console.log(burgersObject);
-        res.render("index", burgersObject);
+        console.log(hbsObject);
+        res.render("index", hbsObject);
     })
 });
 
@@ -30,7 +27,7 @@ router.post("/api/burgers", function(req, res)
     // Insert the burger into the database
     burger.insert([
         "burger_name", "devoured"
-    ], [req.body.burger_name, req.body.devoured], result => {
+    ], [req.body.burger_name, req.body.devoured], function(result)  {
         res.json({
             id: result.insertId
         });
