@@ -2,7 +2,7 @@
 var express = require("express");
 
 // Variable to establish the port to use for the localhost
-var PORT = process.env.PORT || 8080;
+var PORT = process.env.PORT || 5000;
 
 // Variable to use the express npm package
 var app = express();
@@ -30,7 +30,7 @@ app.use(routes);
 
 
 // Listener to start listening on a specfic port. Display message for the user letting them know of connection to localhost and port
-app.listen(PORT, function() 
+app.listen(process.env.PORT || 5000, function() 
 {
   console.log("App now listening at localhost:" + PORT);
 });
