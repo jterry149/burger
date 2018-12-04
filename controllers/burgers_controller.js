@@ -11,9 +11,9 @@ var burger = require("../models/burger");
 ////// Start the functions route for the burgers ///////
 
 // GET route for getting all of the burgers
-router.Get("/", (req, res) => 
+router.get("/", function(req, res) 
 {
-    burger.all(data => 
+    burger.all(function(data) 
     {
         var burgersObject = 
         {
@@ -25,7 +25,7 @@ router.Get("/", (req, res) =>
 });
 
 // POST the route for the burgers
-router.post("/api/burgers", (req, res) => 
+router.post("/api/burgers", function(req, res) 
 {
     // Insert the burger into the database
     burger.insert([
@@ -38,7 +38,7 @@ router.post("/api/burgers", (req, res) =>
 });
 
 // PUT the burgers as devoured in api by id if eaten
-router.put("/api/burgers/:id", (req, res) => 
+router.put("/api/burgers/:id", function(req, res) 
 {
     var condition = "id = " + req.params.id;
     
@@ -48,7 +48,7 @@ router.put("/api/burgers/:id", (req, res) =>
     // Update the burgers condition
     burger.update({
         devoured: req.body.devoured
-    }, condition, result => {
+    }, condition, function(result)  {
         if (result.changedRows === 0) 
         {
             return res.status(404).end();
