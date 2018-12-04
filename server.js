@@ -30,7 +30,7 @@ app.use(routes);
 
 
 // Listener to start listening on a specfic port. Display message for the user letting them know of connection to localhost and port
-app.listen(process.env.PORT || 5000, function() 
+app.listen(PORT, function() 
 {
   console.log("App now listening at localhost:" + PORT);
 });
