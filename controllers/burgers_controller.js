@@ -11,7 +11,7 @@ var burger = require("../models/burger");
 ////// Start the functions route for the burgers ///////
 
 // GET route for getting all of the burgers
-router.get("/", (req, res) => 
+router.Get("/", (req, res) => 
 {
     burger.all(data => 
     {
