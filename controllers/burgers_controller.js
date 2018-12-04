@@ -11,7 +11,7 @@ var burger = require("../models/burger");
 ////// Start the functions route for the burgers ///////
 
 // GET route for getting all of the burgers
-router.GET("/", (req, res) => 
+router.get("/", (req, res) => 
 {
     burger.all(data => 
     {
@@ -25,7 +25,7 @@ router.GET("/", (req, res) =>
 });
 
 // POST the route for the burgers
-router.POST("/api/burgers", (req, res) => 
+router.post("/api/burgers", (req, res) => 
 {
     // Insert the burger into the database
     burger.insert([
@@ -38,7 +38,7 @@ router.POST("/api/burgers", (req, res) =>
 });
 
 // PUT the burgers as devoured in api by id if eaten
-router.PUT("/api/burgers/:id", (req, res) => 
+router.put("/api/burgers/:id", (req, res) => 
 {
     var condition = "id = " + req.params.id;
     
