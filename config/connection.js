@@ -7,7 +7,7 @@ var connection = null;
 // Create the connection to mysql and what database
 if (process.env.JAWSDB_URL) 
 {
-  connection = mysql.createConnectio(process.env.JAWSDB_URL);
+  connection = mysql.createConnection(process.env.JAWSDB_URL);
 }
 else
 connection = mysql.createConnection(
