@@ -27,6 +27,9 @@ var routes = require("./controllers/burgers_controller");
 // Set the app to use the routes
 app.use(routes);
 
+app.get('/', function(req, res) {
+  res.sendFile(path.join(__dirname, 'index.html'));
+});
 
 
 // Listener to start listening on a specfic port. Display message for the user letting them know of connection to localhost and port
