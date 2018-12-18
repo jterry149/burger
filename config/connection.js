@@ -19,7 +19,7 @@ connection = mysql.createConnection(
   database: "burgers_db"
 });
 
-// Make the connection with the database sn send correct message if successful
+// Make the connection with the database and send correct message if successful
 connection.connect(function(err) 
 {
   if (err) 

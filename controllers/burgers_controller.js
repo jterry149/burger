@@ -5,21 +5,24 @@ var express = require("express");
 var router = express.Router();
 
 // Variable used to to bring in burger.js
-var burger = require("../models/burger");
+var burger = require("../models/burger.js");
 
 
 ////// Start the functions route for the burgers ///////
 
 // GET route for getting all of the burgers
 router.get("/", (req, res) => {
-    burger.all(data => {
-        const hbsObject = {
-            burgers: data
-        };
-        console.log(hbsObject);
-        res.render("index", hbsObject);
-    })
+        res.render("/index");
 });
+
+// Get Index Page render burgers to the DOM
+router.get('/index', (req, res) =>
+{
+    burger.selectAll(function(data) {
+      var hbsObject = { burgers: data };
+      res.render('index', hbsObject);
+    });
+  });
 
 // POST the route for the burgers
 router.post("/api/burgers", function(req, res) 
