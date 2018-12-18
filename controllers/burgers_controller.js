@@ -16,7 +16,7 @@ router.get("/", (req, res) => {
 });
 
 // Get Index Page render burgers to the DOM
-router.get('/', (req, res) =>
+router.get('/index', (req, res) =>
 {
     burger.all(function(data) {
       var hbsObject = { burgers: data };
