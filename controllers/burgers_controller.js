@@ -12,11 +12,11 @@ var burger = require("../models/burger.js");
 
 // GET route for getting all of the burgers
 router.get("/", (req, res) => {
-        res.render("/index");
+        res.render("index");
 });
 
 // Get Index Page render burgers to the DOM
-router.get('/index', (req, res) =>
+router.get('/', (req, res) =>
 {
     burger.selectAll(function(data) {
       var hbsObject = { burgers: data };
