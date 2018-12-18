@@ -2,7 +2,7 @@
 var express = require("express");
 
 // Variable to establish the port to use for the localhost
-var port = process.env.PORT || 5000;
+var port = process.env.PORT || 3000;
 
 // Variable to use the express npm package
 var app = express();
