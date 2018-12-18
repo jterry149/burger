@@ -1,5 +1,5 @@
 // Variable to bring in the orm.js dependencie
-var orm = require("../config/orm.js");
+var orm = require("./config/orm.js");
 
 // Variable to to bring in the functions used to query the burgers database
 var burger = 
