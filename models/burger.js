@@ -5,7 +5,7 @@ var orm = require("../config/orm.js");
 var burger = 
 {
     // Callback the selectAll function
-    selectAll: callback => 
+    all: callback => 
     {
         orm.selectAll("burgers", res =>
         {

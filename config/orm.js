@@ -44,13 +44,6 @@ var objToSql = (obj) =>
     return array.toString();
 }
 
-
-
-
-
-
-
-
 /// Start of the functions needed to query the database ///
 var orm = {
 
