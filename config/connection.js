@@ -1,9 +1,8 @@
 // Variable to use for mysql dependencies
 var mysql = require("mysql");
-var env = require("dotenv");
 
 // Variable to reference the database connection
-var connection = null;
+var connection;
 
 // Create the connection to mysql and what database
 if (process.env.JAWSDB_URL) 
