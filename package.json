@@ -4,7 +4,6 @@
   "description": "A restaurant app that lets users input the name of burgers they like",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
   "repository": {
@@ -30,9 +29,5 @@
   },
   "engines": {
     "node": "^10.6.0"
-  },
-  "production": {
-    "use_env_variable": "JAWSDB_URL",
-    "dialect": "mysql"
   }
 }
